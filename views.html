@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>عداد الزوار</title>
+</head>
+<body>
+  <h1>عداد الزوار</h1>
+  <p id="visitors"></p>
+
+  <script>
+    var visitors = localStorage.getItem('visitors') || 0;
+    document.getElementById('visitors').innerHTML = "عدد الزوار: " + visitors;
+  </script>
+</body>
+</html>

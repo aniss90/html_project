@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل HTML الشامل | بحث متقدم</title>
+     <title>بحث الـ HTML </title>
     <style>
         /* CSS Variables */
         :root {
@@ -226,6 +226,7 @@
             padding: 2rem;
             box-shadow: var(--shadow);
             height: fit-content;
+            backdrop-filter: blur(12);
         }
 
         .sidebar h3 {
@@ -273,6 +274,7 @@
 
         .tag {
             background: #f0f4ff;
+        box-shadow: var(--shadow);
             color: var(--primary-color);
             padding: 5px 15px;
             border-radius: 50px;
@@ -475,13 +477,20 @@
         }
     </style>
 </head>
-<body>
+
+  <script>
+    var visitors = localStorage.getItem('visitors') || 0;
+    visitors++;
+    localStorage.setItem('visitors', visitors);
+  </script>
+
+
     <header>
         <div class="header-content">
-            <h1>بحث HTML </h1>
-            <p class="tagline">كل المعلومات التي تحتاجه لتعلم وتطوير مواقع الويب باستخدام HTML</p>
+            <h1> HTML project <img src="imag/toothless.gif" width="50"></h1>
+            <p class="tagline">كل المعلومات التي تحتاجها     عن لغة البرمجة  HTML</p>
             <div class="search-container">
-                <input type="text" class="search-box" placeholder="ابحث عن أي شيء في HTML...">
+                <input type="text" class="search-box" placeholder="بحث عن معلومات حول HTML...">
                 <button class="search-btn">🔍</button>
             </div>
         </div>
@@ -508,6 +517,8 @@
                 </ul>
 
             </article>
+           
+
 
             <article class="article">
                 <h2>HTML5: أحدث إصدار</h2>
@@ -521,7 +532,70 @@
               
             </article>
 
-
+ <article class="article">
+  <h2> HTML مع تقنيات الويب الحديثة</h2>
+  <p>HTML يمكن استخدامها مع تقنيات الويب الحديثة مثل:</p>
+  <ul>
+    <li><code>Python</code>: يمكن استخدامها مع إطارات عمل مثل:
+      <ul>
+        <li>Flask: إطار عمل خفيف الوزن وسهل الاستخدام لإنشاء تطبيقات ويب ديناميكية.</li>
+        <li>Django: إطار عمل شامل ومتكامل لإنشاء تطبيقات ويب معقدة.</li>
+        <li>Pyramid: إطار عمل مرن وسهل الاستخدام لإنشاء تطبيقات ويب.</li>
+      </ul>
+      <p>يمكن استخدام Python مع HTML لإنشاء:</p>
+      <ul>
+        <li>تطبيقات ويب ديناميكية.</li>
+        <li>تخزين البيانات في قواعد البيانات.</li>
+        <li>تحليل البيانات وتقديمها في شكل رسوم بيانية.</li>
+      </ul>
+    </li>
+    <li><code>JavaScript</code>: يمكن استخدامها لإنشاء:
+      <ul>
+        <li>أحداث تفاعلية مثل النقرات والتمرير.</li>
+        <li>تحديث محتوى الصفحة دون الحاجة إلى إعادة تحميلها.</li>
+        <li>تأثيرات بصرية وتحريك العناصر.</li>
+      </ul>
+      <p>يمكن استخدام JavaScript مع HTML لإنشاء:</p>
+      <ul>
+        <li>تطبيقات ويب تفاعلية.</li>
+        <li>رسوم بيانية وتحليلات بيانات.</li>
+        <li>تأثيرات بصرية وتحريك العناصر.</li>
+      </ul>
+      <p>أطر العمل الشائعة ل JavaScript:</p>
+      <ul>
+        <li>React: إطار عمل شائع لإنشاء تطبيقات ويب تفاعلية.</li>
+        <li>Angular: إطار عمل شامل ومتكامل لإنشاء تطبيقات ويب معقدة.</li>
+        <li>Vue.js: إطار عمل مرن وسهل الاستخدام لإنشاء تطبيقات ويب.</li>
+      </ul>
+    </li>
+    <li><code>CSS</code>: يمكن استخدامها لتصميم الصفحة وتحديد:
+      <ul>
+        <li>لون الخلفية.</li>
+        <li>لون النص.</li>
+        <li>حجم الخط.</li>
+        <li>تخطيط الصفحة.</li>
+      </ul>
+      <p>يمكن استخدام CSS مع HTML لإنشاء:</p>
+      <ul>
+        <li>تصميم صفحات ويب جميلة وجذابة.</li>
+        <li>تخطيطات مختلفة للصفحة.</li>
+        <li>تأثيرات بصرية وتحريك العناصر.</li>
+      </ul>
+    </li>
+    <li><code>Node.js</code>: يمكن استخدامها مع إطارات عمل مثل:
+      <ul>
+        <li>Express.js: إطار عمل شائع لإنشاء تطبيقات ويب ديناميكية.</li>
+        <li>Koa.js: إطار عمل مرن وسهل الاستخدام لإنشاء تطبيقات ويب.</li>
+      </ul>
+      <p>يمكن استخدام Node.js مع HTML لإنشاء:</p>
+      <ul>
+        <li>تطبيقات ويب ديناميكية.</li>
+        <li>تخزين البيانات في قواعد البيانات.</li>
+        <li>تحليل البيانات وتقديمها في شكل رسوم بيانية.</li>
+      </ul>
+    </li>
+  </ul>
+</article>
         </main>
 
         <aside class="sidebar">
@@ -543,17 +617,18 @@
 
     <footer>
         <div class="footer-content">
-            <h2>دليل HTML الشامل</h2>
-            <p>مصدرك الوحيد لتعلم كل شيء عن HTML وتطوير الويب</p>
+            <h2>  مشروع حول HTML</h2>
+            <p>I hope you like the style of the website</p>
+            <p> If you like it follow me in my social media accounts </p>
             
             <div class="social-links">
-                <a href="#" class="social-link">📱</a>
-                <a href="#" class="social-link">💻</a>
-                <a href="#" class="social-link">📘</a>
-                <a href="#" class="social-link">🐦</a>
+
+                <a href="https://www.instagram.com/vnis1_____/" class="social-link"><img  src="imag/free-instagram-logo-icon-3497-thumb.png" height="30"></a>
+                <a href="https://github.com/aniss90" class="social-link"><img  src="imag/25231.png" height="30"></a>
+
             </div>
             
-            <p>© 2025 by anis</p>
+            <p>© 2025 by anis <img  src="imag/OWN_7.gif" height="14"></p>
         </div>
     </footer>
 
